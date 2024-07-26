@@ -1,0 +1,42 @@
+.carousel-container {
+    width: 100%;
+    max-width: 1050px; /* Tăng lên để chứa khoảng cách giữa các slide */
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide {
+    min-width: calc(20% - 8px); /* 20% trừ đi 8px để tạo khoảng cách 10px giữa các slide */
+    height: 200px;
+    margin-right: 10px; /* Tạo khoảng cách 10px giữa các slide */
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+   
+.nav-button { position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 10;
+}
+.nav-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.prev {
+    left: 10px;
+}
+.next {
+    right: 10px;
+}
